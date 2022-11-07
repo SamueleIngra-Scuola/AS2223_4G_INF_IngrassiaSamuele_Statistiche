@@ -8,7 +8,8 @@ namespace AS2223_4G_INF_Prof_Statistiche
 {
     public class Statistiche
     {
-
+        int sommaValori = 0, nValori = 0;
+        double sommatoriaValoriPesi = 0.0;
 
         public Statistiche()
         {
@@ -58,7 +59,9 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// </summary>
         public void ClearValue()
         {
-
+            sommaValori = 0;
+            sommatoriaValoriPesi = 0.0;
+            nValori = 0;
         }
 
         /// <summary>
@@ -67,7 +70,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <returns></returns>
         public int CountValue()
         {
-
+            return nValori;
         }
 
     }
