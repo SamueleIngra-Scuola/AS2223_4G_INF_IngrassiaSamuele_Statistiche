@@ -21,7 +21,9 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// </summary>
         /// <param name="valore"></param>
         public void AddValue(int valore)
-        { 
+        {
+            sommaValori += valore;
+            nValori++;
         }
 
         /// <summary>
@@ -32,6 +34,8 @@ namespace AS2223_4G_INF_Prof_Statistiche
         public void AddValue(int valore, double peso)
         {
 
+            sommatoriaValoriPesi += valore * peso;
+            nValori++;
         }
 
         /// <summary>
@@ -41,7 +45,9 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <returns></returns>
         public double MediaAritmetica()
         {
+            double mediaAritmetica = sommaValori / nValori;
 
+            return mediaAritmetica;
         }
 
         /// <summary>
@@ -51,7 +57,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <returns></returns>
         public double MediaPonderata()
         {
-
+            
         }
 
         /// <summary>
