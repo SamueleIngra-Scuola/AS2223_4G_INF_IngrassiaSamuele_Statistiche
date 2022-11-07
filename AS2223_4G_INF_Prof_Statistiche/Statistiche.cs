@@ -9,7 +9,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
     public class Statistiche
     {
         int sommaValori = 0, nValori = 0;
-        double sommatoriaValoriPesi = 0.0;
+        double sommaValoriPerPeso = 0.0, sommaPesi;
 
         public Statistiche()
         {
@@ -33,8 +33,8 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <param name="peso"></param>
         public void AddValue(int valore, double peso)
         {
-
-            sommatoriaValoriPesi += valore * peso;
+            sommaValoriPerPeso += valore * peso; //Moltiplichiamo valore e peso e aggiungiamoli alla somma
+            sommaPesi += peso;
             nValori++;
         }
 
@@ -57,7 +57,9 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// <returns></returns>
         public double MediaPonderata()
         {
-            
+            double mediaPonderata = sommaValoriPerPeso / sommaPesi;
+
+            return mediaPonderata;
         }
 
         /// <summary>
@@ -66,7 +68,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
         public void ClearValue()
         {
             sommaValori = 0;
-            sommatoriaValoriPesi = 0.0;
+            sommaValoriPerPeso = 0.0;
             nValori = 0;
         }
 
