@@ -67,8 +67,9 @@ namespace AS2223_4G_INF_Prof_Statistiche
         /// </summary>
         public void ClearValue()
         {
-            sommaValori = 0;
+            sommaValori = 0.0;
             sommaValoriPerPeso = 0.0;
+            sommaPesi = 0.0;
             nValori = 0;
         }
 
