@@ -9,7 +9,7 @@ namespace AS2223_4G_INF_Prof_Statistiche
     public class Statistiche
     {
         int nValori = 0;
-        double sommaValori = 0.0, sommaValoriPerPeso = 0.0, sommaPesi;
+        double sommaValori = 0.0, sommaValoriPerPeso = 0.0, sommaPesi = 0.0;
 
         public Statistiche()
         {
